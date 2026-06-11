@@ -6,7 +6,7 @@ const { google } = require('googleapis');
 const DISCORD_TOKEN    = process.env.DISCORD_TOKEN;
 const CHANNEL_NAME     = 'koc-apply';          // Channel where button lives
 const SHEET_ID         = process.env.GOOGLE_SHEET_ID;
-const GOOGLE_CREDS     = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+const GOOGLE_CREDS     = process.env.GOOGLE_SERVICE_ACCOUNT_JSON ? JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON) : null;
 // ──────────────────────────────────────────────────────────────────────────────
 
 // ─── GOOGLE SHEETS SETUP ─────────────────────────────────────────────────────

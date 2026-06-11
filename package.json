@@ -1,0 +1,17 @@
+{
+    "name": "koc-discord-bot",
+    "version": "1.0.0",
+    "description": "EHP Labs KOC Application Bot",
+    "main": "index.js",
+    "scripts": {
+          "start": "node index.js"
+    },
+    "dependencies": {
+          "discord.js": "^14.15.3",
+          "dotenv": "^16.4.5",
+          "googleapis": "^140.0.0"
+    },
+    "engines": {
+          "node": ">=18.0.0"
+    }
+}
